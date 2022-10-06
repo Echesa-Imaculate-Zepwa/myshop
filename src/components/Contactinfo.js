@@ -6,7 +6,7 @@ const Contactinfo = () => {
         <div>
         
           
-          you can find us at !
+          <p1>you can find us at !</p1>
         
         
         </div>

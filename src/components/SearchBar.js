@@ -2,7 +2,7 @@ import React from "react";
 const SearchBar = () => (
     
   <form >
-      <label htmlFor="header-search">
+      <label>
           <span>ITEMS HERE</span>
       </label>
       <input

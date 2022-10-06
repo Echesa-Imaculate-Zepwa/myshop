@@ -1,28 +1,30 @@
 import React, { useEffect, useState } from "react";
 import Navbar from "./components/Navbar";
 import "./App.css";
-import SearchBar from './components/searchBar'
+import SearchBar from './components/SearchBar'
 import Home from "./components/Home";
-import Products from "./components/products";
-import Contactinfo from "./components/contactinfo";
+import Products from "./components/Products";
+import Contactinfo from "./components/Contactinfo";
 const App = () => {
-  const [user, setUser] = useState([]);
+  const [products, setProducts] = useState([]);
 
   const fetchData = () => {
     return fetch("https://makeup-api.herokuapp.com/api/v1/products.json")
           .then((response) => response.json())
-          .then((data) => setUser(data));
+          .then((data) => setProducts(data));
   }
 
   useEffect(() => {
     fetchData();
   },[])
+  //  console.log(user)
   return (
     <div>
-      <Navbar />
+      
+      <Navbar/>
       <SearchBar/>
        <Home/>
-       <Products/>
+      <Products products={products}/>
        <Contactinfo/>
     </div>
   );
