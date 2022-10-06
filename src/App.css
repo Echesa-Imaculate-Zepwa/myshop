@@ -28,12 +28,26 @@ p1{
   font-size: 2cm;
 }
 
+
+/* 
+.card {
+  display: grid;
+  grid-template-rows: max-content 200px 1fr;
+} */
+
+.card-container{
+  display: grid;
+grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+grid-gap: 20px;
+}
+
 .card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  max-width: 300px;
+  max-width: 400px;
   margin: auto;
   text-align: center;
   font-family: arial;
+  /* height: 100vh; */
 }
 
 
@@ -62,5 +76,41 @@ p1{
 .card-image { 
    width:100%;
  }
- 
+
+ ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: #111;
+}
+
+.active {
+  background-color: #04AA6D;
+}
+.nav-about{
+  float: right;
+}
+
+.description{
+  height: 30vh;
+  overflow: hidden;
+}
+
 

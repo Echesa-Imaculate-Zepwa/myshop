@@ -8,14 +8,16 @@ import Contactinfo from "./components/Contactinfo";
 const App = () => {
   const [products, setProducts] = useState([]);
 
-  const fetchData = () => {
-    return fetch("https://makeup-api.herokuapp.com/api/v1/products.json")
-          .then((response) => response.json())
-          .then((data) => setProducts(data));
-  }
-
+  // const fetchData = () => {
+    // return fetch("https://makeup-api.herokuapp.com/api/v1/products.json")
+          // .then((response) => response.json())
+          // .then((data) => setProducts(data));
+  // }
+// 
   useEffect(() => {
-    fetchData();
+    fetch("https://makeup-api.herokuapp.com/api/v1/products.json")
+.then((response) => response.json())
+.then((data) => setProducts(data));
   },[])
   //  console.log(user)
   return (
