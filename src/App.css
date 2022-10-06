@@ -1,0 +1,30 @@
+nav{
+  padding-left: 3cm;
+  font-size: 3cm;
+  background-color: rgb(240, 137, 11);
+  font-family: 'Courier New', Courier, monospace;
+  
+}
+form{
+  padding-left: 5cm;
+  background-color: rgb(229, 230, 243);
+
+}
+
+body{
+  background-color: rgb(255, 20, 79);
+  
+}
+img{
+  padding-top: 0cm;
+  width: 45cm;
+  height: 20cm;
+  
+
+}
+div{
+  font-family: 'Courier New', Courier, monospace;
+  font-style: oblique;
+  align-self: stretch;
+  font-size: 2cm;
+}
