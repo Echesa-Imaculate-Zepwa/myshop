@@ -1,7 +1,8 @@
 import React from "react";
 const SearchBar = () => (
     
-  <form >
+<>
+     <form >
       <label>
           <span>ITEMS HERE</span>
       </label>
@@ -9,11 +10,11 @@ const SearchBar = () => (
           type="text"
           id="header-search"
           placeholder="Search item"
-          name="s" 
+    
       />
       <button type="submit">Search</button>
   </form>
-  
+  </>
 );
 
 export default SearchBar;

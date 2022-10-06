@@ -26,8 +26,8 @@ const App = () => {
       <Navbar/>
       <SearchBar/>
        <Home/>
-      <Products products={products}/>
        <Contactinfo/>
+      <Products products={products}/>
     </div>
   );
 }

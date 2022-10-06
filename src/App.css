@@ -1,18 +1,18 @@
 nav{
   padding-left: 3cm;
   font-size: 3cm;
-  background-color: rgb(240, 137, 11);
+  background-color: rgb(133, 240, 11);
   font-family: 'Courier New', Courier, monospace;
   
 }
 form{
   padding-left: 5cm;
-  background-color: rgb(229, 230, 243);
+  background-color:aquamarine;
 
 }
 
 body{
-  background-color: rgb(85, 79, 81);
+  background-color: rgb(116, 9, 238);
   
 }
 img{
@@ -102,7 +102,7 @@ li a:hover:not(.active) {
 }
 
 .active {
-  background-color: #04AA6D;
+  background-color: #e5ece7;
 }
 .nav-about{
   float: right;
