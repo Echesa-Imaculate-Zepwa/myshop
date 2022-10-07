@@ -4,29 +4,25 @@ import "./App.css";
 import SearchBar from './components/SearchBar'
 import Home from "./components/Home";
 import Products from "./components/Products";
-import Contactinfo from "./components/Contactinfo";
+
+
 const App = () => {
   const [products, setProducts] = useState([]);
 
-  // const fetchData = () => {
-    // return fetch("https://makeup-api.herokuapp.com/api/v1/products.json")
-          // .then((response) => response.json())
-          // .then((data) => setProducts(data));
-  // }
-// 
-  useEffect(() => {
-    fetch("https://makeup-api.herokuapp.com/api/v1/products.json")
-.then((response) => response.json())
-.then((data) => setProducts(data));
-  },[])
-  //  console.log(user)
+
+useEffect(() => {
+  fetch("https://makeup-api.herokuapp.com/api/v1/products.json")
+  .then((response) => response.json())
+  .then((data) => setProducts(data));
+},[])
+
+  //  console.log(products[0])
   return (
     <div>
-      
       <Navbar/>
-      <SearchBar/>
-       <Home/>
-       <Contactinfo/>
+      <SearchBar products={products} setProducts={setProducts} />
+       {/* <Home/> */}
+       {/* <Contactinfo/> */}
       <Products products={products}/>
     </div>
   );
