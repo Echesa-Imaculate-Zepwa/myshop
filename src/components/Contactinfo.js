@@ -41,7 +41,7 @@ const Contactinfo = () => {
   className="message"
   name="message"
 />
-<button type="submit" className="send">Send</button>
+<button type="submit" className="send"></button>
         
         </div>
         

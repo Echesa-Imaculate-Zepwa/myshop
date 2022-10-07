@@ -5,8 +5,6 @@ export default function Navbar() {
       <div>
         <ul>
             <li><a href="#home">NIVA'S COSMETICS</a></li>
-  
-
 </ul>
       </div>
         
